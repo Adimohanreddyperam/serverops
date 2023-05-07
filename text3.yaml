@@ -1,0 +1,5 @@
+ - name: install httpd pkg
+   hosts: all
+   tasks:
+    - name: httpd
+      yum: name=httpd state=present
