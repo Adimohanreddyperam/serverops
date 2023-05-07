@@ -1,0 +1,10 @@
+---
+ - name: this is handlertask
+   hosts: all
+   tasks:
+     - name: copy the sshd_service1.config file
+       copy: src=/etc/ssh/sshd_config dest=/etc/ssh/
+       notify: restarting sshd service
+   handlers:
+        - name: restarting sshd service
+          service: name=sshd state=restarted
