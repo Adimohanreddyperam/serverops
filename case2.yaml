@@ -1,0 +1,6 @@
+---
+ - hosts: lab1
+   tasks:
+     - name: to display the below message
+       debug:
+        msg: "welcome to varains"
