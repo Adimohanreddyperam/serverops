@@ -1,0 +1,8 @@
+---
+ - hosts: lab1
+   tasks:
+    - debug:
+        msg:
+           - "welcome to varains"
+           - "welcome to nareshins"
+           - "welcome to guruins"
