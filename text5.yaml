@@ -1,0 +1,6 @@
+---
+ - name: this is my 5th playbook
+   hosts: all
+   tasks:
+   - name: httpd service
+     service: name=httpd state=started enabled=yes
