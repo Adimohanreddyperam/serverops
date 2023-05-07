@@ -1,0 +1,8 @@
+ ---
+ - name: usage of debug module
+   hosts: lab
+   tasks:
+    - name: priting ip address
+      debug:
+        msg: my ip address of server{{ansible_default_ipv4.address}}
+#         var: ansible_default_ipv4.address
